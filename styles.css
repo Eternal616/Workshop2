@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond&family=Montserrat:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Manrope&family=Montserrat:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;700&family=Montserrat:wght@100&display=swap');
+.root {
+    --primary-color: #093931;
+    --header-letter-color: #F5D38E;
+    --tipografia-header1: 'Cormorant Garamond', serif;
+    --tipografia-header2:'Manrope', sans-serif;
+    --tipografia-header3:'Manrope', sans-serif;
+}
+
+.encabezado{
+    display: flex;
+    background-color:#093931 ;
+    font-style: var(--tipografia-header1);
+    width: 1440px;
+    height: 62px;
+    margin: -7.68px;;
+    
+}
+
+.titulo{
+    display: flex;
+    color:#F5D38E ;
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 400;
+    font-size: 30px;
+    margin-left: 100px;
+    align-items: flex-end;
+    width: 95px;
+    height: 46px;
+    top: 8px;
+    left: 132px;
+}
+
+.titulo{
+    /* Darling. */
+
+position: absolute;
+width: 95px;
+height: 46px;
+left: 30px;
+top: 10px;
+
+font-family: 'Cormorant Garamond';
+font-style: normal;
+font-weight: 400;
+font-size: 30px;
+line-height: 46px;
+/* identical to box height, or 153% */
+
+color: #F5D38E;
+
+
+}
+
+.redireccion{
+    display: flex;
+    font-family: 'Manrope', sans-serif;
+    font-weight: 400;
+    color: #FFFFFF;
+    margin-left: 400px;
+    font-size: 13px;
+    align-items: center;
+
+}
+
+.barra:hover{
+    cursor: pointer;
+    font-weight: 700;
+    color: #F5D38E;
+    text-decoration: underline 3px;
+}
+
+.cuerpo{
+    font-family: 'Cormorant Garamond', serif;
+}
