@@ -1,19 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond&family=Montserrat:wght@100&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Manrope&family=Montserrat:wght@100&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;700&family=Montserrat:wght@100&display=swap');
 .root {
     --primary-color: #093931;
     --header-letter-color: #F5D38E;
     --tipografia-header1: 'Cormorant Garamond', serif;
     --tipografia-header2:'Manrope', sans-serif;
-    --tipografia-header3:'Manrope', sans-serif;
 }
 
 .encabezado{
     display: flex;
     background-color:#093931 ;
     font-style: var(--tipografia-header1);
-    width: 1440px;
+    width: 1260px;
     height: 62px;
     margin: -7.68px;;
     
@@ -59,19 +57,40 @@ color: #F5D38E;
     font-family: 'Manrope', sans-serif;
     font-weight: 400;
     color: #FFFFFF;
-    margin-left: 400px;
+    margin-left: 630px;
     font-size: 13px;
     align-items: center;
 
 }
-
 .barra:hover{
     cursor: pointer;
     font-weight: 700;
     color: #F5D38E;
     text-decoration: underline 3px;
 }
+.icono:hover{
+    cursor: pointer;
+}
+
+.carrito{
+    width: 20px;
+    height: 20px;
+}
 
 .cuerpo{
+    width: 1260px;
+    height: 821px;
+    display: flex;
     font-family: 'Cormorant Garamond', serif;
+    color: #F5D38E;
+    background-image: url("./asests/background.png");
+    background-color: #093931;
+    margin: -7.68px;
+}
+
+.titulo2{
+    padding: 50px;
+    width: 537px;
+    height: 282px;
+    margin: 0;
 }
