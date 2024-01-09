@@ -310,6 +310,9 @@
     margin-left: 300px;
 }
 
+.jewelryy{
+    border-radius: 10px;
+}
 .jewelryy:hover{
     cursor: pointer;
 }
@@ -337,4 +340,137 @@
     font-size: 16px;
     line-height: 26px;
     margin-top: -40px;
+}
+
+.collection{
+    display: flex;
+    font-family: var(--tipografia-header1);
+    width: 255px;
+    height: 56px;
+    top: 48px;
+    left: 579px;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 56px;
+    align-items: center;
+    margin-top: 270px;
+    margin-left: 510px;
+    padding: 40px 20px;
+}
+
+.im1{
+    display: flex;
+    width: 300px;
+    height: 300px;
+    top: 150px;
+    left: 540px;
+    border-radius: 10px;
+    align-items: center;
+    margin-bottom: -90px;
+    margin-left: 80px;
+    margin-right: 0px;
+}
+
+.texto1{
+    display: flex;
+    width: 249px;
+    height: 48px;
+    top: 288px;
+    left: 55px;
+    font-family: var(--tipografia-header1);
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 48px;
+    margin-bottom: -30px;
+    margin-left: 150px;
+    color: white;
+}
+
+.im2{
+    display: flex;
+    width: 300px;
+    height: 300px;
+    top: 150px;
+    left: 540px;
+    border-radius: 10px;
+    align-items: center;
+    margin-top: -340px;
+    margin-left: 443px;
+}
+
+.texto2{
+    display: flex;
+    width: 249px;
+    height: 48px;
+    top: 288px;
+    left: 55px;
+    font-family: var(--tipografia-header1);
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 48px;
+    margin-top: -50px;
+    margin-left: 510px;
+    color: #FFFFFF;
+}
+
+.im3{
+    display: flex;
+    width: 300px;
+    height: 300px;
+    top: 150px;
+    left: 540px;
+    border-radius: 10px;
+    align-items: center;
+    margin-top: -280px;
+    margin-left: 800px;
+}
+
+.texto3{
+    display: flex;
+    width: 249px;
+    height: 48px;
+    top: 288px;
+    left: 55px;
+    font-family: var(--tipografia-header1);
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 48px;
+    margin-top: -50px;
+    margin-left: 870px;
+    color: white;
+}
+
+.im4{
+    display: flex;
+    width: 300px;
+    height: 300px;
+    top: 150px;
+    left: 540px;
+    border-radius: 10px;
+    margin-left: 80px;
+    margin-top: 40px;
+}
+
+.texto4{
+    display: flex;
+    width: 249px;
+    height: 48px;
+    top: 288px;
+    left: 55px;
+    font-family: var(--tipografia-header1);
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 48px;
+    margin-top: -60px;
+    margin-left: 150px;
+    color: white;
+}
+
+.im5{
+    display: flex;
+    width: 300px;
+    height: 300px;
+    top: 150px;
+    left: 540px;
+    border-radius: 10px;
 }
