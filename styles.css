@@ -32,24 +32,18 @@
 }
 
 .titulo{
-    /* Darling. */
-
-position: absolute;
-width: 95px;
-height: 46px;
-left: 30px;
-top: 10px;
-
-font-family: 'Cormorant Garamond';
-font-style: normal;
-font-weight: 400;
-font-size: 30px;
-line-height: 46px;
-/* identical to box height, or 153% */
-
-color: #F5D38E;
-
-
+    display: flex;
+    position: absolute;
+    width: 95px;
+    height: 46px;
+    left: 30px;
+    top: 10px;
+    font-family: 'Cormorant Garamond';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 46px;
+    color: #F5D38E;
 }
 
 .redireccion{
@@ -73,6 +67,7 @@ color: #F5D38E;
 }
 
 .carrito{
+    display: flex;
     width: 20px;
     height: 20px;
 }
@@ -89,6 +84,7 @@ color: #F5D38E;
 }
 
 .titulo2{
+    display: flex;
     padding: 50px;
     width: 537px;
     height: 400px;
@@ -146,10 +142,6 @@ color: #F5D38E;
     padding-left: 820px;
 }
 
-.img3:hover{
-    cursor: pointer;
-}
-
 .figuritas{
     width: 1250px;
     height: 232px;
@@ -157,6 +149,7 @@ color: #F5D38E;
 }
 
 .delivery{
+    display: flex;
     width: 62px;
     height: 62px;
     padding-left: 160px;
@@ -164,6 +157,7 @@ color: #F5D38E;
 }
 
 .text1{
+    display: flex;
     width: 276px;
     height: 52px;
     top: 144px;
@@ -179,6 +173,7 @@ color: #F5D38E;
 }
 
 .titulodelivery{
+    display: flex;
     color: #171A1F;
     width: 70px;
     height: 28px;
@@ -191,8 +186,8 @@ color: #F5D38E;
 
 .corazon{
     display: flex;
-    margin-top: -180px;
-    margin-left: 600px;
+    margin-top: -170px;
+    margin-left: 580px;
 }
 
 .titulocorazon{
@@ -201,11 +196,12 @@ color: #F5D38E;
     font-family: var(--tipografia-header1);
     font-weight: 600;
     font-size: 18px;
-    margin-left: 620px;
-    margin-top: -4px;
+    margin-left: 600px;
+    margin-top: -10px;
 }
 
 .text2{
+    display: flex;
     width: 276px;
     height: 52px;
     top: 144px;
@@ -215,7 +211,46 @@ color: #F5D38E;
     font-size: 16px;
     align-self: center;
     line-height: 26px;
-    padding-left: 560px;
+    padding-left: 540px;
     color:  #9095A0;
-    margin-top: 0px;
+    margin-top: -9px;
+}
+
+.lock{
+    display: flex;
+    position: relative;
+    width: 62px;
+    height: 62px;
+    top: 36px;
+    left: 1093px;
+    margin-top: -215px;
+    margin-left: -110px;
+}
+
+.titulolock{
+    display: flex;
+    color: #171A1F;
+    font-family: var(--tipografia-header1);
+    font-weight: 600;
+    font-size: 18px;
+    justify-content: flex-end;
+    margin-top: 50px;
+    margin-right: 130px;
+}
+
+.text3{
+    display: flex;
+    display: flex;
+    width: 276px;
+    height: 52px;
+    top: 144px;
+    left: 180px;
+    font-family: var(--tipografia-header2);
+    font-weight: 400;
+    font-size: 16px;
+    align-self: center;
+    line-height: 26px;
+    padding-left: 940px;
+    color:  #9095A0;
+    margin-top: -7px;
 }
