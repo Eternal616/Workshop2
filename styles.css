@@ -79,7 +79,7 @@ color: #F5D38E;
 
 .cuerpo{
     width: 1260px;
-    height: 821px;
+    height: 700px;
     display: flex;
     font-family: 'Cormorant Garamond', serif;
     color: #F5D38E;
@@ -150,3 +150,72 @@ color: #F5D38E;
     cursor: pointer;
 }
 
+.figuritas{
+    width: 1250px;
+    height: 232px;
+    top: 845px;
+}
+
+.delivery{
+    width: 62px;
+    height: 62px;
+    padding-left: 160px;
+    padding-top: 50px;
+}
+
+.text1{
+    width: 276px;
+    height: 52px;
+    top: 144px;
+    left: 180px;
+    font-family: var(--tipografia-header2);
+    font-weight: 400;
+    font-size: 16px;
+    align-self: center;
+    line-height: 26px;
+    padding-left: 120px;
+    color:  #9095A0;
+    margin-top: -10px;
+}
+
+.titulodelivery{
+    color: #171A1F;
+    width: 70px;
+    height: 28px;
+    font-family: var(--tipografia-header1);
+    font-weight: 600;
+    font-size: 18px;
+    padding-left: 200px;
+    margin-top: -10px;
+}
+
+.corazon{
+    display: flex;
+    margin-top: -180px;
+    margin-left: 600px;
+}
+
+.titulocorazon{
+    display: flex;
+    color: #171A1F;
+    font-family: var(--tipografia-header1);
+    font-weight: 600;
+    font-size: 18px;
+    margin-left: 620px;
+    margin-top: -4px;
+}
+
+.text2{
+    width: 276px;
+    height: 52px;
+    top: 144px;
+    left: 180px;
+    font-family: var(--tipografia-header2);
+    font-weight: 400;
+    font-size: 16px;
+    align-self: center;
+    line-height: 26px;
+    padding-left: 560px;
+    color:  #9095A0;
+    margin-top: 0px;
+}
