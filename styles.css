@@ -309,3 +309,32 @@
     margin-top: -300px;
     margin-left: 300px;
 }
+
+.jewelryy:hover{
+    cursor: pointer;
+}
+
+.texxto{
+    display: flex;
+    width: 180px;
+    height: 36px;
+    top: 332px;
+    left: 12px;
+    font-family: var(--tipografia-header1);
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 10px;
+}
+
+.precio{
+    display: flex;
+    width: 57px;
+    height: 26px;
+    top: 366px;
+    left: 12px;
+    font-family: var(--tipografia-header2);
+    font-weight: 400px;
+    font-size: 16px;
+    line-height: 26px;
+    margin-top: -40px;
+}
