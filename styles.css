@@ -1,0 +1,562 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond&family=Montserrat:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Manrope&family=Montserrat:wght@100&display=swap');
+.root {
+    --primary-color: #093931;
+    --header-letter-color: #F5D38E;
+    --tipografia-header1: 'Cormorant Garamond', serif;
+    --tipografia-header2:'Manrope', sans-serif;
+}
+
+.encabezado{
+    display: flex;
+    background-color:#093931 ;
+    font-style: var(--tipografia-header1);
+    width: 1260px;
+    height: 62px;
+    margin: -7.68px;;
+    
+}
+
+.titulo{
+    display: flex;
+    color:#F5D38E ;
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 400;
+    font-size: 30px;
+    margin-left: 100px;
+    align-items: flex-end;
+    width: 95px;
+    height: 46px;
+    top: 8px;
+    left: 132px;
+}
+
+.titulo{
+    display: flex;
+    position: absolute;
+    width: 95px;
+    height: 46px;
+    left: 30px;
+    top: 10px;
+    font-family: 'Cormorant Garamond';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 46px;
+    color: #F5D38E;
+}
+
+.redireccion{
+    display: flex;
+    font-family: 'Manrope', sans-serif;
+    font-weight: 400;
+    color: #FFFFFF;
+    margin-left: 630px;
+    font-size: 13px;
+    align-items: center;
+
+}
+.barra:hover{
+    cursor: pointer;
+    font-weight: 700;
+    color: #F5D38E;
+    text-decoration: underline 3px;
+}
+.icono:hover{
+    cursor: pointer;
+}
+
+.carrito{
+    display: flex;
+    width: 20px;
+    height: 20px;
+}
+
+.cuerpo{
+    width: 1260px;
+    height: 700px;
+    display: flex;
+    font-family: 'Cormorant Garamond', serif;
+    color: #F5D38E;
+    background-image: url("./asests/background.png");
+    background-color: #093931;
+    margin: -7.68px;
+}
+
+.titulo2{
+    display: flex;
+    padding: 50px;
+    width: 537px;
+    height: 400px;
+    margin: 0;
+    font-size: 72px;
+    line-height: 85px;
+    font-weight: 400;
+    padding-top: 170px;
+}
+
+.img1{
+    display: flex;
+    width: 407px;
+    height: 543px;
+    border-radius: 8px;
+    top: 139px;
+    left: 741px;
+    padding-left: 25px;
+    padding-top: 50px;
+}
+
+.img2{
+    display: flex;
+    width: 241px;
+    height: 321px;
+    top: 250px;
+    left: 1051px;
+    margin-top: -400px;
+    padding-left: 330px;
+}
+
+.boton{
+    width: 200px;
+    height: 52px;
+    margin-left: -1160px;
+    margin-top: 450px;
+    border: solid white;
+    color: white;
+    cursor: pointer;
+    background-color: transparent;
+    border-radius: 40px;
+}
+
+.boton:hover{
+    background-color: #F5D38E;
+    border: #F5D38E;
+    color: #093931;
+}
+
+.img3{
+    display: flex;
+    width: 52px;
+    height: 52px;
+    padding-top: 325px;
+    padding-left: 820px;
+}
+
+.figuritas{
+    width: 1250px;
+    height: 232px;
+    top: 845px;
+}
+
+.delivery{
+    display: flex;
+    width: 62px;
+    height: 62px;
+    padding-left: 160px;
+    padding-top: 50px;
+}
+
+.text1{
+    display: flex;
+    width: 276px;
+    height: 52px;
+    top: 144px;
+    left: 180px;
+    font-family: var(--tipografia-header2);
+    font-weight: 400;
+    font-size: 16px;
+    align-self: center;
+    line-height: 26px;
+    padding-left: 120px;
+    color:  #9095A0;
+    margin-top: -10px;
+}
+
+.titulodelivery{
+    display: flex;
+    color: #171A1F;
+    width: 70px;
+    height: 28px;
+    font-family: var(--tipografia-header1);
+    font-weight: 600;
+    font-size: 18px;
+    padding-left: 200px;
+    margin-top: -10px;
+}
+
+.corazon{
+    display: flex;
+    margin-top: -170px;
+    margin-left: 580px;
+}
+
+.titulocorazon{
+    display: flex;
+    color: #171A1F;
+    font-family: var(--tipografia-header1);
+    font-weight: 600;
+    font-size: 18px;
+    margin-left: 600px;
+    margin-top: -10px;
+}
+
+.text2{
+    display: flex;
+    width: 276px;
+    height: 52px;
+    top: 144px;
+    left: 180px;
+    font-family: var(--tipografia-header2);
+    font-weight: 400;
+    font-size: 16px;
+    align-self: center;
+    line-height: 26px;
+    padding-left: 540px;
+    color:  #9095A0;
+    margin-top: -9px;
+}
+
+.lock{
+    display: flex;
+    position: relative;
+    width: 62px;
+    height: 62px;
+    top: 36px;
+    left: 1093px;
+    margin-top: -215px;
+    margin-left: -110px;
+}
+
+.titulolock{
+    display: flex;
+    color: #171A1F;
+    font-family: var(--tipografia-header1);
+    font-weight: 600;
+    font-size: 18px;
+    justify-content: flex-end;
+    margin-top: 50px;
+    margin-right: 130px;
+}
+
+.text3{
+    display: flex;
+    display: flex;
+    width: 276px;
+    height: 52px;
+    top: 144px;
+    left: 180px;
+    font-family: var(--tipografia-header2);
+    font-weight: 400;
+    font-size: 16px;
+    align-self: center;
+    line-height: 26px;
+    padding-left: 940px;
+    color:  #9095A0;
+    margin-top: -7px;
+}
+
+.h2{
+    display: flex;
+    color:#0D554A;
+    width: 264px;
+    height: 112px;
+    top: 54px;
+    left: 132px;
+    font-family: var(--tipografia-header1);
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 56px;
+    margin-left: 60px;
+}
+
+.h2_text{
+    display: flex;
+    width: 264px;
+    height: 78px;
+    top: 178px;
+    left: 132px;
+    font-family: var(--tipografia-header2);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    margin-left: 60px;
+}
+
+.boton2{
+    width: 200px;
+    height: 52px;
+    top: 280px;
+    left: 132px;
+    border-radius: 26px;
+    background-color: transparent;
+    border: 1px solid #0D554A;
+    color: #0D554A;
+    margin-left: 60px;
+}
+
+.boton2:hover{
+    cursor: pointer;
+    background-color: #F5D38E;
+    border: #F5D38E;
+    color: #093931;
+}
+
+.jewelry{
+    display: flex;
+    width: 230px;
+    height: 280px;
+    flex-direction: row;
+    margin-top: -300px;
+    margin-left: 300px;
+}
+
+.jewelryy{
+    border-radius: 10px;
+}
+.jewelryy:hover{
+    cursor: pointer;
+}
+
+.texxto{
+    display: flex;
+    width: 180px;
+    height: 36px;
+    top: 332px;
+    left: 12px;
+    font-family: var(--tipografia-header1);
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 10px;
+}
+
+.precio{
+    display: flex;
+    width: 57px;
+    height: 26px;
+    top: 366px;
+    left: 12px;
+    font-family: var(--tipografia-header2);
+    font-weight: 400px;
+    font-size: 16px;
+    line-height: 26px;
+    margin-top: -40px;
+}
+
+.collection{
+    display: flex;
+    font-family: var(--tipografia-header1);
+    width: 255px;
+    height: 56px;
+    top: 48px;
+    left: 579px;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 56px;
+    align-items: center;
+    margin-top: 270px;
+    margin-left: 510px;
+    padding: 40px 20px;
+}
+
+.im1{
+    display: flex;
+    width: 300px;
+    height: 300px;
+    top: 150px;
+    left: 540px;
+    border-radius: 10px;
+    align-items: center;
+    margin-bottom: -90px;
+    margin-left: 80px;
+    margin-right: 0px;
+}
+
+.texto1{
+    display: flex;
+    width: 249px;
+    height: 48px;
+    top: 288px;
+    left: 55px;
+    font-family: var(--tipografia-header1);
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 48px;
+    margin-bottom: -30px;
+    margin-left: 150px;
+    color: white;
+}
+
+.im2{
+    display: flex;
+    width: 300px;
+    height: 300px;
+    top: 150px;
+    left: 540px;
+    border-radius: 10px;
+    align-items: center;
+    margin-top: -340px;
+    margin-left: 443px;
+}
+
+.texto2{
+    display: flex;
+    width: 249px;
+    height: 48px;
+    top: 288px;
+    left: 55px;
+    font-family: var(--tipografia-header1);
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 48px;
+    margin-top: -50px;
+    margin-left: 510px;
+    color: #FFFFFF;
+}
+
+.im3{
+    display: flex;
+    width: 300px;
+    height: 300px;
+    top: 150px;
+    left: 540px;
+    border-radius: 10px;
+    align-items: center;
+    margin-top: -280px;
+    margin-left: 800px;
+}
+
+.texto3{
+    display: flex;
+    width: 249px;
+    height: 48px;
+    top: 288px;
+    left: 55px;
+    font-family: var(--tipografia-header1);
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 48px;
+    margin-top: -50px;
+    margin-left: 870px;
+    color: white;
+}
+
+.im4{
+    display: flex;
+    width: 300px;
+    height: 300px;
+    top: 150px;
+    left: 540px;
+    border-radius: 10px;
+    margin-left: 80px;
+    margin-top: 40px;
+}
+
+.texto4{
+    display: flex;
+    width: 249px;
+    height: 48px;
+    top: 288px;
+    left: 55px;
+    font-family: var(--tipografia-header1);
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 48px;
+    margin-top: -60px;
+    margin-left: 150px;
+    color: white;
+}
+
+.im5{
+    display: flex;
+    width: 300px;
+    height: 300px;
+    top: 150px;
+    left: 540px;
+    border-radius: 10px;
+    margin-left: 443px;
+    margin-top: -355px;
+}
+
+.texto5{
+    display: flex;
+    width: 249px;
+    height: 48px;
+    top: 288px;
+    left: 55px;
+    font-family: var(--tipografia-header1);
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 48px;
+    margin-left: 510px;
+    margin-top: -50px;
+    color: white;
+}
+
+.im6{
+    display: flex;
+    width: 300px;
+    height: 300px;
+    top: 150px;
+    left: 540px;
+    border-radius: 10px;
+    margin-left: 800px;
+    margin-top: -275px;
+}
+
+.texto6{
+    display: flex;
+    width: 249px;
+    height: 48px;
+    top: 288px;
+    left: 55px;
+    font-family: var(--tipografia-header1);
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 48px;
+    margin-left: 870px;
+    margin-top: -50px;
+    color: white;
+}
+
+.botonx{
+    width: 200px;
+    height: 52px;
+    top: 280px;
+    left: 132px;
+    border-radius: 26px;
+    background-color: transparent;
+    border: 1px solid #0D554A;
+    color: #0D554A;
+    margin-left: 540px;
+}
+
+.im1:hover{
+    cursor: pointer;
+}
+
+.im2:hover{
+    cursor: pointer;
+}
+
+.im3:hover{
+    cursor: pointer;
+}
+
+.im4:hover{
+    cursor: pointer;
+}
+
+.im5:hover{
+    cursor: pointer;
+}
+
+.im6:hover{
+    cursor: pointer;
+}
+
+.botonx:hover{
+    cursor: pointer;
+    background-color: #F5D38E;
+    border: #F5D38E;
+    color: #093931;
+}
