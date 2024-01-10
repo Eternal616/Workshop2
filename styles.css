@@ -570,7 +570,7 @@
 
 }
 
-#titulo3 {
+#titulo_3 {
     width: 100%;
     max-width: 264px;
     color: #0D554A;
@@ -585,7 +585,7 @@
 
 }
 
-#texto3 {
+#texto_3 {
     width: 100%;
     max-width: 264px;
     color: #424955;
@@ -599,7 +599,7 @@
 
 }
 
-#boton3 {
+#boton_3 {
     display: inline-flex;
     padding: 12px 59px;
     justify-content: center;
@@ -636,7 +636,7 @@
 
 }
 
-.img5 img {
+.img_5 img {
 
     width: 100%;
     height: 100%;
@@ -765,7 +765,6 @@ li {
     margin: 0 auto;
     display: flex;
     flex-direction: row;
-    
     background: rgba(23, 26, 31, 0.30);
 
 
@@ -795,6 +794,7 @@ li {
 .Subscribe {
     padding: 0 15;
 }
+
 
 .link,
 ul,
