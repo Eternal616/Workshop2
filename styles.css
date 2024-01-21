@@ -103,6 +103,7 @@
     height: 100%;
     position: relative;
     background: #093931;
+    overflow: auto;
 
 }
 
@@ -117,6 +118,7 @@
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-evenly;
+
 
 }
 
@@ -254,15 +256,13 @@ li {
 
 #texto6 {
     display: flex;
-    
     color: #FAFAFB;
     font-family: Manrope;
     font-size: 12px;
     font-style: normal;
     font-weight: 400;
     line-height: 20px;
-    /* 166.667% */
-    display: flex;
+    
 
 }
 
@@ -283,7 +283,7 @@ li {
     font-style: normal;
     font-weight: 400;
     line-height: 22px;
-    /* 157.143% */
+    
 
 }
 
@@ -300,7 +300,7 @@ li {
     font-style: normal;
     font-weight: 400;
     line-height: 22px;
-    /* 157.143% */
+ 
     color: #6B4A09;
 
 }
