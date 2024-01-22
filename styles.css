@@ -570,7 +570,7 @@
 
 }
 
-#titulo_3 {
+#titulo3 {
     width: 100%;
     max-width: 264px;
     color: #0D554A;
@@ -619,19 +619,6 @@
 
 }
 }
-
-@media only  screen and (width <= 37.5rem){
-    #texto3{
-    font-size: 7px;
-    font-style: normal;
-    font-weight: 100;
-    line-height: 12px;
-    /* 162.5% */
-    word-wrap: break-word;
-
-}
-}
-
 #boton3 {
     display: inline-flex;
     padding: 12px 59px;
