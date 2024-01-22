@@ -1,0 +1,706 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Cormorant Garamond;
+}
+
+.dos-container {
+    display: flex;
+    flex-direction: row;
+    gap: 8%;
+
+}
+
+@media only screen and (max-width: 600px) {
+    .dos-container {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+    }
+}
+
+
+.order-sumary {
+    width: 80%;
+    max-width: 750px;
+    max-height: 550px;
+    flex-shrink: 0;
+    border-radius: 4px;
+    background: #FFF;
+    box-shadow: 0px 0px 1px 0px rgba(31, 28, 23, 0.07), 0px 0px 2px 0px rgba(23, 26, 31, 0.12);
+    margin-left: 40px;
+    padding: 30px;
+}
+
+@media only screen and (max-width: 600px) {
+
+    .order-sumary {
+        width: 70%;
+        margin-left: 10px;
+        padding: 30px;
+    }
+
+
+}
+
+
+
+.order-s {
+    display: inline-flex;
+    color: #171A1F;
+    font-family: Cormorant Garamond;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 36px;
+    /* 150% */
+}
+
+@media only screen and (max-width: 600px) {
+    .order-s {
+        display: inline-flex;
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 26px;
+    }
+}
+
+.tabla table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.tabla th,
+.tabla td {
+    border: 1px;
+    padding: 8px;
+}
+
+.tabla img {
+    max-width: 120px;
+    max-height: 120px;
+}
+
+@media only screen and (max-width: 600px) {
+
+    .tabla table {
+        width: 50%;
+        padding: 5px;
+        border-collapse: separate;
+    }
+
+    .tabla th,
+    .tabla td {
+        border: 0.5px;
+        padding: 3px;
+    }
+
+    .tabla svg {
+        width: 50%;
+        display: flex;
+        margin-left: 10px;
+    }
+
+    .tabla img {
+        max-width: 60px;
+        max-height: 60px;
+    }
+
+    .nombre-joyas {
+        display: inline-flex;
+        font-size: 7px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 12px;
+
+    }
+
+    /* Ajusta el tamaño de fuente para pantallas pequeñas */
+}
+
+
+.nombres-joyas {
+    display: inline-flex;
+    color: #171A1F;
+    font-family: Manrope;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 22px;
+    /* 157.143% */
+}
+
+
+
+.codigo {
+    display: flex;
+    color: #565E6C;
+    font-family: Manrope;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    /* 166.667% */
+}
+
+.precio {
+    color: #171A1F;
+    text-align: center;
+    font-family: Manrope;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 22px;
+    /* 157.143% */
+}
+
+.tabla svg {
+    width: 100%;
+    display: flex;
+    margin-left: 30px;
+}
+
+.formulario-pago {
+    width: 100%;
+    max-width: 348px;
+    height: 583px;
+    flex-shrink: 0;
+    padding: 30px;
+    border-radius: 4px;
+    background: #FFF;
+    box-shadow: 0px 0px 1px 0px rgba(23, 26, 31, 0.07), 0px 0px 2px 0px rgba(23, 26, 31, 0.12);
+    border-right: 30px;
+}
+
+@media only screen and (max-width: 600px) {
+
+    .formulario-pago {
+        width: 70%;
+        height: 500px;
+
+    }
+
+
+}
+
+
+.titulo-form {
+    display: flex;
+    max-width: 60%;
+    color: #171A1F;
+    font-family: Cormorant Garamond;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 36px;
+    /* 150% */
+}
+
+@media only screen and (max-width: 600px) {
+    .titulo-form {
+        display: inline-flex;
+        max-width: 20%;
+
+    }
+}
+
+.texto-debajo-titulo-pago {
+    display: flex;
+    color: #379AE6;
+    font-family: Manrope;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.667px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    /* 13.889% */
+}
+
+
+.formulario-pago label {
+
+    max-width: 300px;
+    height: 60px;
+    flex-shrink: 0;
+    border-radius: 3px;
+    border: 1px solid #0D554A;
+    background: #F8F9FA;
+    color: #0D554A;
+    font-family: Manrope;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 18px;
+}
+
+.formulario-pago img {
+    display: inline-flex;
+    position: relative;
+    top: 10px;
+    left: 2px;
+    margin-right: 3px;
+
+}
+
+
+.segundo-titulo-form {
+    color: #171A1F;
+    font-family: Cormorant Garamond;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 28px;
+    /* 155.556% */
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.formulario-pago input {
+    display: inline-flex;
+    width: 220px;
+    padding: 7px 159px 6px 12px;
+    align-items: center;
+    border-radius: 4px;
+    border: 1px solid #9095A0;
+    background: #FFF;
+    color: #171A1F;
+    font-family: Manrope;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px;
+    /* 157.143% */
+}
+
+.btn {
+    display: inline-flex;
+    padding: 7px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+    background: #F2C66D;
+    border: 1px solid #F2C66D;
+    color: #6B4A09;
+    font-family: Manrope;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px;
+    /* 157.143% */
+
+}
+
+.precio-dos {
+    display: inline-flex;
+    color: #8F640C;
+    font-family: Manrope;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    margin-top: 5px;
+
+}
+
+.sumary {
+    display: flex;
+    color: #171A1F;
+    font-family: Cormorant Garamond;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 28px;
+    /* 155.556% */
+}
+
+.subtitulo-pagos {
+    display: flex;
+    color: #171A1F;
+    font-family: Manrope;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    /* 166.667% */
+}
+
+.precio-tres {
+    display: inline-flex;
+    color: #E8502E;
+    text-align: right;
+    font-family: Manrope;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 28px;
+    /* 155.556% */
+}
+
+.pagar {
+    display: inline-flex;
+    padding: 9px 76px 9px 75px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 22px;
+    background: #0D554A;
+    color: #FFF;
+    font-family: Manrope;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px;
+    /* 162.5% */
+}
+
+@media only screen and (max-width: 600px) {
+    .formulario-pago label {
+        max-width: 150;
+        height: 30px;
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 200;
+        line-height: 18px;
+    }
+
+    .formulario-pago img {
+        display: inline-flex;
+        max-width: 30px;
+    }
+
+    .segundo-titulo-form {
+        max-width: 30%;
+    }
+
+    .formulario-pago input {
+        max-width: 30%;
+
+    }
+
+    .precio {
+        max-width: 30%;
+    }
+
+    .precio-dos {
+        display: flex;
+    }
+
+    .precio-tres {
+        display: inline-flex;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 28px;
+    }
+
+    .pagar {
+        display: inline-flex;
+        padding: 4px 36px 4px 35px;
+
+    }
+}
+
+
+
+
+
+.tabla-2 table {
+    width: 100%;
+    border-collapse: collapse;
+
+
+
+
+}
+
+.tabla-2 th,
+td {
+    border: 10px;
+    margin-right: 155px;
+
+}
+
+@media only screen and (max-width: 600px) {
+
+    .tabla-2 table {
+        width: 50%;
+
+    }
+
+}
+
+.listado-joyas {
+    margin-top: 50px;
+    width: 100%;
+    max-width: 1440px;
+    height: 100%;
+    max-height: 586px;
+    flex-shrink: 0;
+    background: #FFF;
+    padding: 60px;
+}
+
+.imagenes-joyas {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 18px;
+
+}
+
+
+@media only screen and (max-width: 600px) {
+    .listado-joyas {
+        width: 100%;
+
+    }
+    .imagenes-joyas {
+        width: 80%;
+        display: flex;
+        flex-direction: row;
+        gap: 3px;
+    
+    }
+
+    .item img {
+        width: 50%;
+    }
+
+}
+
+.titulo-contenedor {
+    display: inline-flex;
+    color: #0D554A;
+    font-family: Cormorant Garamond;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 56px;
+    /* 140% */
+}
+
+.nombre-joyas {
+    color: #171A1F;
+    font-family: Cormorant Garamond;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 36px;
+    /* 150% */
+}
+
+.precio-joyas {
+    color: #171A1F;
+    font-family: Manrope;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px;
+    /* 162.5% */
+}
+
+.item {
+    max-width: 17.25rem;
+    max-height: 20rem;
+    flex-shrink: 0;
+
+    border-radius: 8px;
+    background: #FFF;
+    box-shadow: 0px 0px 1px 0px rgba(23, 26, 31, 0.07), 0px 0px 2px 0px rgba(23, 26, 31, 0.12);
+}
+
+@media only screen and (max-width: 600px) {
+
+    .nombre-joyas,
+    .precio-joyas {
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 350;
+        line-height: 20px;
+
+    }
+
+    .titulo-contenedor {
+        color: #0D554A;
+        font-family: Cormorant Garamond;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 25px;
+    }
+}
+
+.footer-sin-imagen {
+    width: 100%;
+    max-width: 1440px;
+    height: 100%;
+    max-height: 234px;
+    flex-shrink: 0;
+    background: #093931;
+}
+
+.footer-menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding-top: 40px;
+
+
+}
+
+.darling {
+    color: #F5D38E;
+    font-family: Cormorant Garamond;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 46px;
+
+
+}
+
+.primera-parte li a,
+.segunda-parte li a {
+    color: #FFF;
+    font-family: Manrope;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px;
+    /* 157.143% */
+    text-decoration: none;
+    transition: .5s;
+    color: #FFFFFF;
+    ;
+}
+
+.primera-parte ul li,
+.segunda-parte ul li {
+    list-style-type: none;
+
+}
+
+#titulo-formulario {
+    color: #FFF;
+    font-family: Cormorant Garamond;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px;
+    /* 150% */
+}
+
+#texto-formulario {
+    color: #FAFAFB;
+    font-family: Manrope;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    /* 166.667% */
+}
+
+.tercera-parte-menu input {
+    display: inline-flex;
+    padding: 7px 132px 6px 12px;
+    align-items: center;
+    gap: 6px;
+    border-radius: 18px 0px 0px 18px;
+    border: 1px solid #FFF;
+    background: rgba(0, 0, 0, 0.00);
+    color: #FFF;
+    font-family: Manrope;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px;
+    /* 157.143% */
+}
+
+.tercera-parte-menu button {
+    display: inline-flex;
+    padding: 7px 23.5px 7px 24.5px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0px 18px 18px 0px;
+    background: #F2C66D;
+    color: #6B4A09;
+    font-family: Manrope;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px;
+    /* 157.143% */
+}
+
+.texto-parte-abajo {
+    color: #FFF;
+    font-family: Manrope;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px;
+    margin-left: 130px;
+    /* 157.143% */
+}
+
+.iconos {
+    display: flex;
+    position: relative;
+    flex-direction: row;
+    justify-content: end;
+
+}
+
+@media only screen and (width <=600px) {
+    .darling {
+        font-size: 10px;
+        font-style: normal;
+        font-weight: 200;
+        line-height: 26px;
+
+    }
+
+    .tercera-parte-menu input {
+        width: 50%;
+        padding: 3px 13.5px 3px 12.5px;
+    }
+
+    .tercera-parte-menu button {
+        display: inline-flex;
+        max-width: 30%;
+        padding: 3px 12.5px 3px 12.5px;
+
+    }
+
+    .footer-menu {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+    }
+
+    .iconos {
+        display: flex;
+        position: relative;
+        flex-direction: row;
+        justify-content: end;
+
+    }
+
+    .texto-parte-abajo {
+        text-align: left;
+        margin-left: 10px;
+    }
+
+}
