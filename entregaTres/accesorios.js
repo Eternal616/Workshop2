@@ -198,3 +198,27 @@ const resultadosBusqueda = buscarProductosPorNombre(products, terminoBusqueda);
 // Mostrar resultados en la consola
 console.log("Resultados de la búsqueda:");
 console.log(resultadosBusqueda);
+
+
+//funcion 4: total a pagar
+
+function calcularTotalCompra(productos) {
+  let total = 0;
+  productos.forEach(producto => {
+      total += producto.cantidad * producto.precioUnitario;
+  });
+  return total;
+}
+
+// Datos de prueba
+const productosSeleccionados = [
+  { id: 1, cantidad: 2, precioUnitario: 620.73 },
+  { id: 5, cantidad: 1, precioUnitario: 120.28 },
+  { id: 9, cantidad: 3, precioUnitario: 168.76 }
+];
+
+// Calcular el total de la compra
+const totalCompra = calcularTotalCompra(productosSeleccionados);
+
+// Mostrar el resultado en la consola
+console.log("Total a pagar de la compra:", totalCompra);
