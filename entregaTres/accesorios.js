@@ -178,3 +178,23 @@ console.log(
   "El orden del precio de los productos en forma Descendente es:",
   ordenardescendente(products)
 );
+
+
+//funcion 2: Escribir una función que realice la búsqueda de productos por nombre, etc.
+
+function buscarProductosPorNombre(productos, terminoBusqueda) {
+  const resultados = productos.filter(producto =>
+      producto.nombre.toLowerCase().includes(terminoBusqueda.toLowerCase())
+  );
+  return resultados;
+}
+
+// Datos de prueba
+const terminoBusqueda = "Majestic";
+
+// Llamada a la función
+const resultadosBusqueda = buscarProductosPorNombre(products, terminoBusqueda);
+
+// Mostrar resultados en la consola
+console.log("Resultados de la búsqueda:");
+console.log(resultadosBusqueda);
