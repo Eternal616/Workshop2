@@ -1,13 +1,23 @@
-let products = [
+const products = [
   {
     id: 1,
     nombre: "Luxury Charms Ring",
     codigo: 78205,
     precioUnitario: 620.73,
     tipoProduct: "anilllo",
-    imagen: "./imagenes/anillo1.png",
+    imagen: ["./imagenes/anillo1.png"],
     descripción: "anillo en baño de oro con una perla color naranja talla M",
-    cantidadEnStock: 4,
+    stock: [{
+      talla:"s",
+      cantidad:7,
+      color:"Dorado"
+    }, 
+    {
+      talla:"M",
+      cantidad:8,
+      color:"plata"
+    },
+  ],
   },
   {
     id: 2,
@@ -15,9 +25,19 @@ let products = [
     codigo: 78206,
     precioUnitario: 620.73,
     tipoProduct: "anilllo",
-    imagen: "./imagenes/anillo2.png",
+    imagen: ["./imagenes/anillo2.png"],
     descripción: "anillo de oro talla S",
-    cantidadEnStock: 6,
+    stock: [{
+      talla:"s",
+      cantidad:9,
+      color:"Dorado"
+    }, 
+    {
+      talla:"M",
+      cantidad:10,
+      color:"Dorado"
+    },
+  ],
   },
 
   {
@@ -28,8 +48,19 @@ let products = [
     tipoProduct: "anilllo",
     imagen: "./imagenes/anilllo3.png",
     descripción: "anillo con incrustaciones de diamantes talla s",
-    cantidadEnStock: 2,
+    stock: [{
+      talla:"s",
+      cantidad:3,
+      color:"plata"
+    }, 
+    {
+      talla:"M",
+      cantidad:2,
+      color:"plata"
+    },
+  ],
   },
+  
   {
     id: 4,
     nombre: "Divine Diamonds",
@@ -38,9 +69,20 @@ let products = [
     tipoProduct: "anilllo",
     imagen: "./imagenes/anilllo4.png",
     descripción: "anillo con en baño de oro con perlas y una perla",
-    cantidadEnStock: 5,
+    stock: [{
+      talla:"s",
+      cantidad:8,
+      color:"Dorado"
+    }, 
+    {
+      talla:"M",
+      cantidad:3,
+      color:"plata"
+    },
+  ],
+
   },
-  
+
   {
     id: 5,
     nombre: "Exquisite Earrings",
@@ -49,7 +91,18 @@ let products = [
     tipoProduct: "aretes",
     imagen: "./imagenes/aretes1.png",
     descripción: "Aretes elegantes para ocasiones especiales ",
-    cantidadEnStock: 7,
+    stock: [{
+      talla:"s",
+      cantidad:3,
+      color:"Dorado"
+    }, 
+    {
+      talla:"M",
+      cantidad:2,
+      color:"plata"
+    },
+  ],
+
   },
   {
     id: 6,
@@ -59,7 +112,18 @@ let products = [
     tipoProduct: "aretes",
     imagen: "./imagenes/arete2.png",
     descripción: "Aretes  sencillos para uso diario ",
-    cantidadEnStock: 10,
+    stock: [{
+      talla:"s",
+      cantidad:7,
+      color:"Dorado"
+    }, 
+    {
+      talla:"M",
+      cantidad:8,
+      color:"plata"
+    },
+  ],
+  
   },
   {
     id: 7,
@@ -69,7 +133,18 @@ let products = [
     tipoProduct: "aretes",
     imagen: "./imagenes/aretes3.png",
     descripción: "Aretes  sencillos para uso diario ",
-    cantidadEnStock: 5,
+    stock: [{
+      talla:"s",
+      cantidad:7,
+      color:"Dorado"
+    }, 
+    {
+      talla:"M",
+      cantidad:8,
+      color:"plata"
+    },
+  ],
+  
   },
   {
     id: 8,
@@ -79,7 +154,18 @@ let products = [
     tipoProduct: "aretes",
     imagen: "./imagenes/aretes4.png",
     descripción: "Aretes  medianos  para uso diario ",
-    cantidadEnStock: 6,
+    stock: [{
+      talla:"s",
+      cantidad:7,
+      color:"Dorado"
+    }, 
+    {
+      talla:"M",
+      cantidad:8,
+      color:"plata"
+    },
+  ],
+  
   },
   {
     id: 9,
@@ -89,7 +175,18 @@ let products = [
     tipoProduct: "cadena",
     imagen: "./imagenes/cadena1.png",
     descripción: "Cadena sencilla elegante dorada  ",
-    cantidadEnStock: 4,
+    stock: [{
+      talla:"s",
+      cantidad:7,
+      color:"Dorado"
+    }, 
+    {
+      talla:"M",
+      cantidad:8,
+      color:"plata"
+    },
+  ],
+  
   },
   {
     id: 10,
@@ -99,7 +196,18 @@ let products = [
     tipoProduct: "cadena",
     imagen: "./imagenes/cadena2.png",
     descripción: "Cadena sencilla con dijes de corazones dorada ",
-    cantidadEnStock: 4,
+    stock: [{
+      talla:"s",
+      cantidad:7,
+      color:"Dorado"
+    }, 
+    {
+      talla:"M",
+      cantidad:8,
+      color:"plata"
+    },
+  ],
+  
   },
   {
     id: 11,
@@ -109,7 +217,18 @@ let products = [
     tipoProduct: "cadena",
     imagen: "./imagenes/cadena2.png",
     descripción: "Cadena con dije grande con incrustaciones de color plata  ",
-    cantidadEnStock: 5,
+    stock: [{
+      talla:"s",
+      cantidad:7,
+      color:"Dorado"
+    }, 
+    {
+      talla:"M",
+      cantidad:8,
+      color:"plata"
+    },
+  ],
+  
   },
   {
     id: 12,
@@ -119,7 +238,18 @@ let products = [
     tipoProduct: "collar",
     imagen: "./imagenes/collar1.png",
     descripción: "collar sencillo con esmeraldas   ",
-    cantidadEnStock: 2,
+    stock: [{
+      talla:"s",
+      cantidad:7,
+      color:"Dorado"
+    }, 
+    {
+      talla:"M",
+      cantidad:8,
+      color:"plata"
+    },
+  ],
+
   },
   {
     id: 13,
@@ -129,10 +259,21 @@ let products = [
     tipoProduct: "collar",
     imagen: "./imagenes/collar2.png",
     descripción: "Collar elegante pomposo  ",
-    cantidadEnStock: 3,
+    stock: [{
+      talla:"s",
+      cantidad:7,
+      color:"Dorado"
+    }, 
+    {
+      talla:"M",
+      cantidad:8,
+      color:"plata"
+    },
+  ],
+  
   },
 
-{
+  {
     id: 14,
     nombre: "simple bracelet",
     codigo: 782017,
@@ -140,11 +281,22 @@ let products = [
     tipoProduct: "pulsera",
     imagen: "./imagenes/pulsera3.png",
     descripción: "pulsera sencilla con esmeraldas   ",
-    cantidadEnStock: 4,
-  },
+    stock: [{
+      talla:"s",
+      cantidad:7,
+      color:"Dorado"
+    }, 
+    {
+      talla:"M",
+      cantidad:8,
+      color:"plata"
+    },
+  ],
   
-
+  },
 ];
+
+
 
 //Declaración de la función que reciba como parámetros un array de productos y el nombre de tipo de producto//
 //  que utilice la función de array que permita filtrar la lista por la  categoría o tipo y devuelva el array resultante.
@@ -179,12 +331,11 @@ console.log(
   ordenardescendente(products)
 );
 
-
 //funcion 2: Escribir una función que realice la búsqueda de productos por nombre, etc.
 
 function buscarProductosPorNombre(productos, terminoBusqueda) {
-  const resultados = productos.filter(producto =>
-      producto.nombre.toLowerCase().includes(terminoBusqueda.toLowerCase())
+  const resultados = productos.filter((producto) =>
+    producto.nombre.toLowerCase().includes(terminoBusqueda.toLowerCase())
   );
   return resultados;
 }
@@ -199,13 +350,12 @@ const resultadosBusqueda = buscarProductosPorNombre(products, terminoBusqueda);
 console.log("Resultados de la búsqueda:");
 console.log(resultadosBusqueda);
 
-
 //funcion 4: total a pagar
 
 function calcularTotalCompra(productos) {
   let total = 0;
-  productos.forEach(producto => {
-      total += producto.cantidad * producto.precioUnitario;
+  productos.forEach((producto) => {
+    total += producto.cantidad * producto.precioUnitario;
   });
   return total;
 }
@@ -214,7 +364,7 @@ function calcularTotalCompra(productos) {
 const productosSeleccionados = [
   { id: 1, cantidad: 2, precioUnitario: 620.73 },
   { id: 5, cantidad: 1, precioUnitario: 120.28 },
-  { id: 9, cantidad: 3, precioUnitario: 168.76 }
+  { id: 9, cantidad: 3, precioUnitario: 168.76 },
 ];
 
 // Calcular el total de la compra
