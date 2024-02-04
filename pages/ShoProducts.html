@@ -36,11 +36,21 @@
     <main>
         <nav class="filtro1">
             <ul class="sortear">
-                <button class="sort__buton">All</button>
-                <button class="sort__buton">Rings</button>
-                <button class="sort__buton">Bracelets</button>
-                <button class="sort__buton">Necklaces</button>
-                <button class="sort__buton">Earrings</button>
+                <form onsubmit="event.preventDefault(); mostrarProductosFiltrados();">
+                    <label for="tipoProducto">Filtrar  Producto:</label>
+                    <select id="tipoProducto" required>
+                        <option>Seleccione</option>
+                        <option value="aretes">Aretes</option>
+                        <option value="collar">Collar</option>
+                        <option value="pulsera">Pulsera</option>
+                        <option value="cadena">Cadenas</option>
+                        <option value="anillo">Anillos</option>
+                    </select>
+                    <button type="submit">Filtrar Productos</button>
+                    
+                </form>
+                <button class="sort__buton" onclick="mostrarTodosProoductos()">All</button>
+                
             </ul>
             <ul class="sort__filtre">
                 <span>Sort by price   ⬇</span>
@@ -56,7 +66,7 @@
         </nav>
         <section id="containerCardProducts">
         </section>
-        <section >
+        <section id="paginacion-element">
             <nav class="paginacion">
                 <ul class="paginacion__elementos">
                     <figure class="paginacion__flechas">
@@ -105,7 +115,7 @@
             <p class="text__figuritas">Ea esse elit anim commodo laborum pariatur nisi. Voluptate elit d</p>
         </section>
     </main>
-    <footer class="footer">
+    <footer id="footer">
         <section class="nav">
             <h4 class="titulo__footer">Darling</h4>
             <nav>
@@ -133,7 +143,7 @@
             <section class="redes">
                 <ul class="red__social">
                     <figure>
-                        <img src="../assestasets/twiter.png">
+                        <img src="../assest/twiter.png">
                     </figure>
                 </ul>
                 <ul class="red__social"> 

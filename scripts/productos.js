@@ -4,8 +4,8 @@ const products = [
     nombre: "Luxury Charms Ring",
     codigo: 78205,
     precioUnitario: 620.73,
-    tipoProduct: "anilllo",
-    imagen: ["../imagenes/anillo1.png"],
+    tipoProduct: "anillo",
+    imagen: ["../imagenes/Imagegrande.png"],
     descripción: "anillo en baño de oro con una perla color naranja talla M",
     stock:  [{ color: "plateado", cantidad: 30 }],
 },
@@ -14,8 +14,8 @@ const products = [
     nombre: "Sparkling Ring ",
     codigo: 78206,
     precioUnitario: 620.73,
-    tipoProduct: "anilllo",
-    imagen: ["../imagenes/anillo2.png"],
+    tipoProduct: "anillo",
+    imagen: ["../imagenes/anillos2.png"],
     descripción: "anillo de oro talla S",
     stock:  [{ color: "plateado", cantidad: 30 }],
 },
@@ -25,8 +25,8 @@ const products = [
     nombre: "Blissful Bloom Ring",
     codigo: 78207,
     precioUnitario: 700.73,
-    tipoProduct: "anilllo",
-    imagen: ["../imagenes/anilllo3.png"],
+    tipoProduct: "anillo",
+    imagen: ["../imagenes/anillo3.png"],
     descripción: "anillo con incrustaciones de diamantes talla s",
     stock:  [{ color: "plateado", cantidad: 30 }],
 },
@@ -35,8 +35,8 @@ const products = [
     nombre: "Divine Diamonds",
     codigo: 78208,
     precioUnitario: 629.73,
-    tipoProduct: "anilllo",
-    imagen: ["../imagenes/anilllo4.png"],
+    tipoProduct: "anillo",
+    imagen: ["../imagenes/anillo4.png"],
     descripción: "anillo con en baño de oro con perlas y una perla",
     stock:  [{ color: "plateado", cantidad: 30 }],
 },
@@ -137,7 +137,7 @@ const products = [
     codigo: 782017,
     precioUnitario: 110.76,
     tipoProduct: "pulsera",
-    imagen: ["../imagenes/pulsera3.png"],
+    imagen: ["../imagenes/pulsera3.jpeg"],
     descripción: "pulsera sencilla con esmeraldas   ",
     stock:  [{ color: "plateado", cantidad: 30 }],
     },
@@ -153,7 +153,7 @@ const imprimirProductos = (container, listadoproduct) => {
         <article class = "card" data-click="card">
         <img src=${element.imagen[0]} alt=${element.nombre} data-click="card">
         <h3 data-click="card">${element.nombre}</h3>
-                <span data-click="card">$${element.precioUnitario}</span>
+        <span data-click="card">$${element.precioUnitario}</span>
             </article>
         `;
     });
@@ -167,3 +167,44 @@ document.addEventListener("click", (Event) => {
     }
 
 })
+
+function filtrarPorTipo(array, tipo) {
+    return array.filter((producto) => producto.tipoProduct === tipo);
+    }
+
+    function mostrarProductosFiltrados(){
+        const tipoSeleccionado = document.getElementById("tipoProducto").value;
+    
+    let resultadoFiltrado = filtrarPorTipo(products, tipoSeleccionado);
+    imprimirProductos(containerCards, resultadoFiltrado);
+    console.log("La lista de productos filtrados es:", resultadoFiltrado);
+    }
+    function mostrarTodosProoductos(){
+        imprimirProductos(containerCards, products);
+    }
+
+    function ordenarAscendente(arreglo) {
+        return arreglo.slice().sort((a, b) => a.precioUnitario - b.precioUnitario);
+        }
+        function mostrarOrdenAscendente(){
+            const ascendente = document.getElementById("ascendente");
+            let resultadoOrden = ordenarAscendente(products, ascendente);
+            imprimirProductos(containerCards, resultadoOrden);
+        }
+
+        function ordenardescendente(arreglo) {
+        return arreglo.slice().sort((a, b) => b.precioUnitario - a.precioUnitario);
+        }
+
+        function ordenarProductos(orden) {
+            // Realiza la ordenación según el tipo seleccionado (ascendente o descendente)
+            let productosOrdenados;
+            if (orden === 'asc') {
+                productosOrdenados = [...products].sort((a, b) => a.precioUnitario - b.precioUnitario);
+            } else if (orden === 'desc') {
+                productosOrdenados = [...products].sort((a, b) => b.precioUnitario - a.precioUnitario);
+            }
+        
+            // Muestra los productos ordenados
+            imprimirProductos(containerCards, productosOrdenados);
+            }
