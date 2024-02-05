@@ -36,7 +36,7 @@
     <main>
         <nav class="filtro1">
             <ul class="sortear">
-                <form onsubmit="event.preventDefault(); mostrarProductosFiltrados();">
+                <form onsubmit="mostrarProductosFiltrados();">
                     <label for="tipoProducto">Filtrar  Producto:</label>
                     <select id="tipoProducto" required>
                         <option>Seleccione</option>
@@ -49,7 +49,7 @@
                     <button type="submit">Filtrar Productos</button>
                     
                 </form>
-                <button class="sort__buton" onclick="mostrarTodosProoductos()">All</button>
+                <button class="sort__buton" onclick="mostrarTodosProductos()">All</button>
                 
             </ul>
             <ul class="sort__filtre">
@@ -166,12 +166,12 @@
     </footer>
     <div class="modalCart hidden">
         <section>
-          <button id="closeModal">X</button>
-          <span>Contenido del modal</span>
+            <button id="closeModal">X</button>
+            <span>Contenido del modal</span>
         </section>
-      </div>
+        </div>
 
-    <script src="../scripts/productos.js"></script>
+<script type="module"  src="../scripts/sProduct.js" ></script>
     <script src="../scripts/modalCart.js"></script>
 </body>
 

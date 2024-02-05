@@ -1,4 +1,4 @@
-const products = [
+export const products = [
     {
     id: 1,
     nombre: "Luxury Charms Ring",
@@ -142,69 +142,3 @@ const products = [
     stock:  [{ color: "plateado", cantidad: 30 }],
     },
 ];
-
-
-const containerCards = document.getElementById("containerCardProducts");
-
-const imprimirProductos = (container, listadoproduct) => {
-    container.innerHTML = "";
-    listadoproduct.forEach(element => {
-        container.innerHTML += `
-        <article class = "card" data-click="card">
-        <img src=${element.imagen[0]} alt=${element.nombre} data-click="card">
-        <h3 data-click="card">${element.nombre}</h3>
-        <span data-click="card">$${element.precioUnitario}</span>
-            </article>
-        `;
-    });
-}
-imprimirProductos(containerCards, products);
-
-document.addEventListener("click", (Event) => {
-
-    if(Event.target.getAttribute("data-click") === "card"){
-        location.href ="../pages/detailsProducts.html";
-    }
-
-})
-
-function filtrarPorTipo(array, tipo) {
-    return array.filter((producto) => producto.tipoProduct === tipo);
-    }
-
-    function mostrarProductosFiltrados(){
-        const tipoSeleccionado = document.getElementById("tipoProducto").value;
-    
-    let resultadoFiltrado = filtrarPorTipo(products, tipoSeleccionado);
-    imprimirProductos(containerCards, resultadoFiltrado);
-    console.log("La lista de productos filtrados es:", resultadoFiltrado);
-    }
-    function mostrarTodosProoductos(){
-        imprimirProductos(containerCards, products);
-    }
-
-    function ordenarAscendente(arreglo) {
-        return arreglo.slice().sort((a, b) => a.precioUnitario - b.precioUnitario);
-        }
-        function mostrarOrdenAscendente(){
-            const ascendente = document.getElementById("ascendente");
-            let resultadoOrden = ordenarAscendente(products, ascendente);
-            imprimirProductos(containerCards, resultadoOrden);
-        }
-
-        function ordenardescendente(arreglo) {
-        return arreglo.slice().sort((a, b) => b.precioUnitario - a.precioUnitario);
-        }
-
-        function ordenarProductos(orden) {
-            // Realiza la ordenación según el tipo seleccionado (ascendente o descendente)
-            let productosOrdenados;
-            if (orden === 'asc') {
-                productosOrdenados = [...products].sort((a, b) => a.precioUnitario - b.precioUnitario);
-            } else if (orden === 'desc') {
-                productosOrdenados = [...products].sort((a, b) => b.precioUnitario - a.precioUnitario);
-            }
-        
-            // Muestra los productos ordenados
-            imprimirProductos(containerCards, productosOrdenados);
-            }
