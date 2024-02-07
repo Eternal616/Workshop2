@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Manrope&display=swap');
+
+:root {
+    --estilo-1: 'Cormorant Garamond', serif;
+    --estilo-2: 'Manrope', sans-serif;
+    --color-1: #F5D38E;
+    --color-2: #093931;
+}
+
+.modalCart{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: #05050549;
+}
+
+.hidden{
+    display: none;
+}
+
+.show{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.modalCart section{
+    width: 50%;
+    height: 100%;
+    background-color: white;
+}
+
+.imagenProductoAgregado{
+    width: 150px;
+    height: 150px;
+}
+
+.figuraProductoAgregado{
+    display: flex;
+    flex-direction: column;
+    padding: 10px 10px;    
+}
+
+.figuraProductoAgregado img{
+    position: relative;
+    top: 40px;
+    left: 30px;
+}
+.figuraProductoAgregado p{
+    padding: 5px;
+    position: relative;
+    top: -80px;
+    left: 200px;
+    font-family: var(--estilo-1);
+    width: 133px;
+    height: 26px;
+    font-weight: 700;
+    font-size: 20px;
+    color: #323842;
+
+}
+
+.figuraProductoAgregado a{
+    padding: 5px;
+    position: relative;
+    top: -80px;
+    left: 200px;
+    font-family: var(--estilo-1);
+    width: 133px;
+    height: 26px;
+    font-weight: 700;
+    font-size: 20px;
+    color: #9095A0;
+}
+
+.modalCartCSS h5{
+    font-family: var(--estilo-1);
+    color: var(--color-2);
+    font-weight: 600;
+    font-size: 40px;
+    position: relative;
+    top: 36px;
+    left: 36px;
+}
+
+.continueCheck{
+    display: flex;
+    cursor: pointer;
+    width: 368px;
+    height: 52px;
+    border-radius: 26px;
+    background-color: var(--color-2);
+    border-color: transparent;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    left: 50%;
+    top: 200px;
+}
+
+.continueCheck:hover{
+    background-color: transparent;
+    border-color: var(--color-2);
+    color: black;
+}
+
+.closeModal{
+    background-color: transparent;
+    width: 28px;
+    height: 28px;
+}

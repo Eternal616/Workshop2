@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="../styles/shoProduct.css">
+    <link rel="stylesheet" href="../styles/modal.css">
     <title>Shop</title>
 </head>
 <body>
@@ -165,9 +166,18 @@
         </aside>
     </footer>
     <div class="modalCart hidden">
-        <section>
-            <button id="closeModal">X</button>
-            <span>Contenido del modal</span>
+        <section class="modalCartCSS">
+            <button class="closeModal" id="closeModal">X</button>
+            <h5>Your Cart</h5>
+            <section class="productosCarrito">
+                <figure class="figuraProductoAgregado">
+                    <img class="imagenProductoAgregado" src="../imagenes/anillo1.png" alt="anillo">
+                    <p>Anillo</p>
+                    <a>Code:78025</a>
+                    <p>$100</p>
+                </figure>
+                <button class="continueCheck" type="button">Continue to checkout</button>
+            </section>
         </section>
         </div>
 
