@@ -488,17 +488,3 @@
     background-color: #05050549;
 }
 
-.hidden{
-    display: none;
-}
-
-.show{
-    display: flex;
-    justify-content: flex-end;
-}
-
-.modalCart section{
-    width: 50%;
-    height: 100%;
-    background-color: white;
-}
