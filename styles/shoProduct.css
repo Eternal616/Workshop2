@@ -12,19 +12,21 @@
     --estilo-2: 'Manrope', sans-serif;
     --color-1: #F5D38E;
     --color-2: #093931;
-    width: 1263px;
+
 }
 
 .header {
     width: 100%;
     height: 100%;
     max-width: 1440px;
-    max-height: 450px;
-
+    max-height: 400px;
 }
 
 .header__nav {
-    height: 62px;
+    width: 100%;
+    height: 100%;
+    max-width: 1440px;
+    max-height: 62px;
     background-color: var(--color-2);
 }
 
@@ -60,7 +62,12 @@
     justify-content: space-evenly;
     justify-content: center;
 }
-
+.header__link a {
+font-family: var(--font-body);
+color: #FFF;
+text-decoration: none;
+font-size: 0.875rem;
+}
 .nav__real {
     display: flex;
     padding: 10.5px 18.63px;
@@ -90,7 +97,8 @@
     display: flex;
     background-image: url("/assest/fondo-header.png");
     background-color: #093931;
-    height: 388px;
+    width:  1440px;
+    height: 450px;
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -247,8 +255,8 @@
     flex-flow: row;
     justify-content: center;
     position: absolute;
-    top: 1500px;
-    left: 500px;
+margin-left: 500px;
+ 
 }
 
 .paginacion__elementos {
@@ -273,9 +281,7 @@
 
 .figuritas {
     display: flex;
-    position: absolute;
-    top: 1600px;
-    width: 100%;
+    width: 1440px;
     height: 232px;
     flex-direction: row;
 }
@@ -295,8 +301,6 @@
     align-self: center;
     text-align: center;
     bottom: 25px;
-    width: 140px;
-    height: 50px;
     left: 110px;
 }
 
@@ -313,12 +317,10 @@
 }
 
 #footer {
-    width: 100%;
-    height: 100%;
-    max-width: 1440px;
-    max-height: 234px;
+
+    width: 1440px;
+    height: 234px;
     display: flex;
-    margin-top: 28px;
     background-color: #093931;
 }
 
