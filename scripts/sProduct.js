@@ -43,3 +43,38 @@ btnMostrarTodos.addEventListener("click", mostrarTodosLosProductos);
 
 
 imprimirProductos(containerCards, products);
+
+
+function ordenarAscendente(arreglo) {
+    return arreglo.slice().sort((a, b) => a.precioUnitario - b.precioUnitario);
+    }
+
+    function ordenarDescendente(arreglo) {
+    return arreglo.slice().sort((a, b) => b.precioUnitario - a.precioUnitario);
+    }
+    
+    console.log(
+    "El orden del precio de los productos en orden Ascendente es:",
+    ordenarAscendente(products)
+    );
+    console.log(
+    "El orden del precio de los productos en forma Descendente es:",
+    ordenarDescendente(products)
+    );
+
+
+    const selectOrdenar = document.getElementById("ordenarProductos");
+
+// Agregar evento de cambio al select
+selectOrdenar.addEventListener("change", () => {
+    const opcionSeleccionada = selectOrdenar.value;
+    let productosOrdenados;
+
+    if (opcionSeleccionada === "ascendente") {
+    productosOrdenados = ordenarAscendente(products);
+    } else if (opcionSeleccionada === "descendente") {
+    productosOrdenados = ordenarDescendente(products);
+    }
+
+    imprimirProductos(containerCards, productosOrdenados);
+});
