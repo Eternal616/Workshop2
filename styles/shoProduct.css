@@ -148,7 +148,19 @@ font-size: 0.875rem;
     top: 522px;
     left: 82px;
 }
-
+.btn-all{
+    width: 128.6px;
+    height: 38px;
+    border-radius: 19px;
+    background-color: transparent;
+    color: var(--color-2);
+    border-color: transparent; 
+}
+.btn-all:hover{
+    cursor: pointer;
+    background-color: var(--color-2);
+    color: white;
+}
 .sort__buton {
     width: 128.6px;
     height: 38px;
@@ -225,7 +237,7 @@ font-size: 0.875rem;
 }
 
 #containerCardProducts {
-    margin-top: 10rem;
+    margin-top: 15rem;
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
@@ -237,6 +249,7 @@ font-size: 0.875rem;
     width: 100%;
     max-width: 60%;
     max-height: 60%;
+
 }
 
 #paginacion-element {

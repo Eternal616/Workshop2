@@ -14,17 +14,17 @@ function mostrarProductos(products) {
     products.forEach(producto => {
         const productoDiv = document.createElement('div');
         productoDiv.innerHTML = `
-            <h2>${producto.nombre}</h2>
-            <p>Código: ${producto.codigo}</p>
-            <p>Precio: $${producto.precioUnitario}</p>
-            <p>Descripción: ${producto.descripcion}</p>
-            <img src="${producto.imagen[0]}" alt="${producto.nombre}">
-        `;
+        <article class="cardProducto" data-id="${producto.id}" data-click="card">
+        <img src=${producto.imagen[0]} alt=${producto.nombre} data-click="card">
+        <h3 data-click="card">${producto.nombre}</h3>
+        <span data-click="card">$${producto.precioUnitario}</span>
+    </article>
+    `;
         resultadoDiv.appendChild(productoDiv);
     });
 }
 
-
+// Manejar clic en los botones de tipo de producto
 document.addEventListener('DOMContentLoaded', function() {
     const tipoBtns = document.querySelectorAll('.sort__buton');
 
@@ -36,3 +36,5 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 });
+
+
