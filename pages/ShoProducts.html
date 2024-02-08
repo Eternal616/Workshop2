@@ -35,24 +35,19 @@
         </section>
     </header>
     <main>
-        <nav class="filtro1">
-            <ul class="sortear">
-                <form onsubmit="mostrarProductosFiltrados();">
-                    <label for="tipoProducto">Filtrar  Producto:</label>
-                    <select id="tipoProducto" required>
-                        <option>Seleccione</option>
-                        <option value="aretes">Aretes</option>
-                        <option value="collar">Collar</option>
-                        <option value="pulsera">Pulsera</option>
-                        <option value="cadena">Cadenas</option>
-                        <option value="anillo">Anillos</option>
-                    </select>
-                    <button type="submit">Filtrar Productos</button>
-                    
-                </form>
-                <button class="sort__buton" onclick="mostrarTodosProductos()">All</button>
+        <div class="filtro1">
+            <div class="sortear">
                 
-            </ul>
+            
+                    
+                <button class="sort__buton" >All</button>
+                <button class="sort__buton"  data-tipo="aretes">Aretes</button>
+                <button class="sort__buton"  data-tipo="anillo">Anillos</button>
+                <button class="sort__buton"  data-tipo="cadena">Cadenas</button>
+                <button class="sort__buton"  data-tipo="collar">Collares</button>
+                <button class="sort__buton"  data-tipo="pulsera">Pulseras</button>
+
+            </div>
             <ul class="sort__filtre">
                 <span>Sort by price   ⬇</span>
                 <div>
@@ -64,9 +59,12 @@
                     </li>
                 </div>
             </ul>
-        </nav>
+        </div>
         <section id="containerCardProducts">
         </section>
+        <section id="contenedor">
+        </section>
+
         <section id="paginacion-element">
             <nav class="paginacion">
                 <ul class="paginacion__elementos">
@@ -183,6 +181,7 @@
 
 <script type="module"  src="../scripts/sProduct.js" ></script>
     <script src="../scripts/modalCart.js"></script>
+    <script type="module" src="../scripts/FiltrarProducts.js"></script>
 </body>
 
 

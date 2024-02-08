@@ -31,3 +31,4 @@ const goToDetailsProduct = () => {
 };
 
 goToDetailsProduct();
+
