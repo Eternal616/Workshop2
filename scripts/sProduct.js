@@ -50,14 +50,15 @@ document.addEventListener("DOMContentLoaded", async () => {
 
 
 const mostrarTodosLosProductos = () => {
-imprimirProductos(containerCards, products);
+imprimirProductos(containerCards, getproducts);
 };
 
 const btnMostrarTodos = document.getElementById("mostrarTodos");
 
 btnMostrarTodos.addEventListener("click", mostrarTodosLosProductos);
 
-imprimirProductos(containerCards, products);
+
+
 
 function ordenarAscendente(arreglo) {
   return arreglo.slice().sort((a, b) => a.precioUnitario - b.precioUnitario);

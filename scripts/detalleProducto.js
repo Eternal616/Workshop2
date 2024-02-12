@@ -72,7 +72,7 @@ const printDetailsProduct = (product) => {
 
 document.addEventListener("DOMContentLoaded", async () => {
     const url = `${URL_BASE}products`;
-    const products = await getProducts(url);
+    const products = await getProducts(url, idProduct);
     const selectedProduct = products.find((product) => product.id === idProduct);
     printDetailsProduct(selectedProduct);
     showColors();

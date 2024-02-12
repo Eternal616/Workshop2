@@ -1,8 +1,27 @@
-import { products } from "../modules/productos.js";
+//import { products } from "../modules/productos.js";
+
+const URL_BASE = "https://backendfalsojsonserver-dev-azcn.2.us-1.fl0.io/";
+const URL_PRODUCTS = URL_BASE + "products";
+
+async function obtenerProductos() {
+    try {
+        const response = await fetch(URL_PRODUCTS);
+        if (!response.ok) {
+            throw new Error('No se pudo obtener la lista de productos');
+        }
+        const productos = await response.json();
+        return productos;
+    } catch (error) {
+        console.error('Error al obtener los productos:', error);
+    }
+}
+
+
+
 
 // Función para filtrar productos por tipo
-function filtrarProductosPorTipo(tipo) {
-    const productosFiltrados = products.filter(producto => producto.tipoProduct.includes(tipo));
+function filtrarProductosPorTipo(productos, tipo) {
+    const productosFiltrados = productos.filter(producto => producto.tipoProduct.includes(tipo));
     return productosFiltrados;
 }
 
@@ -25,13 +44,14 @@ function mostrarProductos(products) {
 }
 
 // Manejar clic en los botones de tipo de producto
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', async function() {
     const tipoBtns = document.querySelectorAll('.sort__buton');
+    const productos = await obtenerProductos();
 
     tipoBtns.forEach(btn => {
         btn.addEventListener('click', function() {
             const tipoAFiltrar = this.dataset.tipo;
-            const productosFiltrados = filtrarProductosPorTipo(tipoAFiltrar);
+            const productosFiltrados = filtrarProductosPorTipo(productos, tipoAFiltrar);
             mostrarProductos(productosFiltrados);
         });
     });
