@@ -10,6 +10,7 @@ async function obtenerProductos() {
             throw new Error('No se pudo obtener la lista de productos');
         }
         const productos = await response.json();
+        console.log('Productos obtenidos:', productos); 
         return productos;
     } catch (error) {
         console.error('Error al obtener los productos:', error);
@@ -22,6 +23,7 @@ async function obtenerProductos() {
 // Función para filtrar productos por tipo
 function filtrarProductosPorTipo(productos, tipo) {
     const productosFiltrados = productos.filter(producto => producto.tipoProduct.includes(tipo));
+    console.log('Productos filtrados por tipo:', productosFiltrados); 
     return productosFiltrados;
 }
 

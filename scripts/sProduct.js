@@ -49,8 +49,9 @@ document.addEventListener("DOMContentLoaded", async () => {
     });
 
 
-const mostrarTodosLosProductos = () => {
-imprimirProductos(containerCards, getproducts);
+const mostrarTodosLosProductos =  async () => {
+  const productos = await getproducts(`${URL_BASE}products`);
+  imprimirProductos(containerCards, productos);
 };
 
 const btnMostrarTodos = document.getElementById("mostrarTodos");
@@ -61,33 +62,29 @@ btnMostrarTodos.addEventListener("click", mostrarTodosLosProductos);
 
 
 function ordenarAscendente(arreglo) {
-  return arreglo.slice().sort((a, b) => a.precioUnitario - b.precioUnitario);
+  const productosOrdenados =  arreglo.slice().sort((a, b) => a.precioUnitario - b.precioUnitario);
+  console.log("Orden Ascendente:", productosOrdenados);
+  return productosOrdenados;
 }
 
 function ordenarDescendente(arreglo) {
-  return arreglo.slice().sort((a, b) => b.precioUnitario - a.precioUnitario);
-}
+  const productosOrdenados = arreglo.slice().sort((a, b) => b.precioUnitario - a.precioUnitario);
+  console.log("Orden Descendente:", productosOrdenados);
+  return productosOrdenados;
 
-console.log(
-  "El orden del precio de los productos en orden Ascendente es:",
-  ordenarAscendente(products)
-);
-console.log(
-  "El orden del precio de los productos en forma Descendente es:",
-  ordenarDescendente(products)
-);
+}
 
 const selectOrdenar = document.getElementById("ordenarProductos");
 
 // Agregar evento de cambio al select
-selectOrdenar.addEventListener("change", () => {
+selectOrdenar.addEventListener("change", async () => {
   const opcionSeleccionada = selectOrdenar.value;
-  let productosOrdenados;
-
+  let productos = await getproducts(`${URL_BASE}products`);
+let productosOrdenados;
   if (opcionSeleccionada === "ascendente") {
-    productosOrdenados = ordenarAscendente(products);
+    productosOrdenados = ordenarAscendente(productos);
   } else if (opcionSeleccionada === "descendente") {
-    productosOrdenados = ordenarDescendente(products);
+    productosOrdenados = ordenarDescendente(productos);
   }
 
   imprimirProductos(containerCards, productosOrdenados);
