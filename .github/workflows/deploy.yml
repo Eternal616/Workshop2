@@ -20,4 +20,4 @@ jobs:
           git checkout gh-pages
           cp -r ./* ..  # Copia todos los archivos a la carpeta raíz
           git add .
-          git commit -m
+          git commit -m"changes"
