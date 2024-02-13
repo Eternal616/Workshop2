@@ -17,7 +17,7 @@ const getProducts = async (url) => {
 const printTipoProducto = (tipoProduct) => {
     let html = "";
     tipoProduct.forEach((element) => {
-        html += `<span>${element}</span>`;
+        html += ` <p class="titulo">${element}</p>`;
     });
 
     return html;
@@ -60,13 +60,15 @@ const printDetailsProduct = (product) => {
 
     h1.innerText = product.nombre;
     main.innerHTML = `
-        <figure class="mainImage">
+    <div class="lista-imagenes-verticales">
             <img src="${product.imagen[0]}">
-        </figure>
+        </div>
+        <p class="code">${product.codigo}</p>
         ${printTipoProducto(product.tipoProduct)}
-        <span>${product.precioUnitario}</span>
+        <p class="precio">${product.precioUnitario}</p>
         ${printSize(product.stock)}
-        <span>${product.descripcion}</span>
+        <span class="descrip">${product.descripcion}</span>
+
     `;
 };
 
@@ -77,3 +79,6 @@ document.addEventListener("DOMContentLoaded", async () => {
     printDetailsProduct(selectedProduct);
     showColors();
 });
+
+
+
