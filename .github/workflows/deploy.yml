@@ -21,3 +21,4 @@ jobs:
           cp -r ./* ..  # Copia todos los archivos a la carpeta raíz
           git add .
           git commit -m"changes"
+          git push origin gh-pages
