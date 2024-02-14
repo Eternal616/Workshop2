@@ -42,7 +42,13 @@ function mostrarProductos(products) {
     </article>
     `;
         resultadoDiv.appendChild(productoDiv);
+        const imagen = productoDiv.querySelector('img');
+        imagen.addEventListener('click', () => {
+            const idProduct = producto.id;
+            localStorage.setItem('idProduct', idProduct);
+            location.href = '../pages/detailsProducts.html';
     });
+});
 }
 
 // Manejar clic en los botones de tipo de producto
